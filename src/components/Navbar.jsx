@@ -5,7 +5,7 @@ function Navbar() {
   <>
   <div className="navbar mt-[25px] border-l-orange-200">
   <div className="flex-1">
-    <a className=" text-3xl font-bold ml-8 flex gap-5">UrbanCart <img src="../../public/fevicon.svg" alt="" /></a>
+    <a className=" text-3xl font-bold ml-8 flex gap-5">UrbanCart <img src="../../public/fevicon.svg " alt="" /></a>
    
   </div>
  <div className='mr-[25%]'>

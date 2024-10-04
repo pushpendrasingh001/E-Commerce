@@ -7,10 +7,10 @@ import About from './components/About'
 function App() {
   return (
     <div className=' overflow-x-hidden '>
-    {/* <Home/>
+    <Home/> 
      <Signup/>
-     <Signin/> */}
-     <About/>
+     <Signin/> 
+     {/* <About/> */}
     </div>
 
   )
