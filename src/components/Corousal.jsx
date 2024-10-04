@@ -6,18 +6,23 @@ function Carousal() {
   const data=[
 
     {
+      id:1,
   img:'../../public/hero.png'
 },
 {
+  id:2,
   img:'../../public/hero.png'
 },
 {
+  id:3,
   img:'../../public/hero.png'
 },
 {
+  id:4,
   img:'../../public/hero.png'
 },
 {
+id:5,
   img:'../../public/hero.png'
 },
 
@@ -42,7 +47,7 @@ function Carousal() {
         
  {data.map((s)=>(
 
-  <div className='  '>
+  <div className='  ' key={s.id}>
 <img src={s.img} className='h-[344px] w-[8922]'/>
   
 

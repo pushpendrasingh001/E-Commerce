@@ -18,11 +18,11 @@ function Navbar() {
  </div>
   <div className="flex-none gap-2">
  <span className='flex'>     <input type="text" placeholder="What are you looking for ?..." className="w-24 md:w-auto"  />
-    <img src="../../public/search.svg" alt="" />
+    <img src="../../public/navbar/search.svg" alt="" />
     </span>
  
-    <img src="../../public/wishlist.svg" alt="" />
-    <img src="../../public/cart.svg" alt="" />
+    <img src="../../public/navbar/wishlist.svg" alt="" />
+    <img src="../../public/navbar/cart.svg" alt="" />
 
     <div className="dropdown dropdown-end">
       <div tabIndex={0} role="button" className="btn btn-ghost btn-circle avatar">
