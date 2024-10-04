@@ -1,6 +1,6 @@
 
 import React from 'react'
-import  CountDownTimer from '../components/SalesTop'
+import  CountDownTimer from './SalesTop'
 function HomeToday() {
   return (
     <div>

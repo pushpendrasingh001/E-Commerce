@@ -3,7 +3,7 @@ import React from 'react'
 function HomeProduct() {
   return (
     <div >
-      <div className=' h-[1016px] my-[100px] '>  
+      <div className=' h-[1016px] mt-[100px] '>  
       <div className='flex justify-around'>
 
 <span className='flex flex-col gap-y-3'>
