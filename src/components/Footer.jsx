@@ -20,7 +20,7 @@ function Footer() {
               className="bg-black"
             />
             <img
-              src="../../public/footer/emailarrow.png"
+              src="/footer/emailarrow.png"
               className="
 h-[24px] w-[24px] "
             />
@@ -50,8 +50,8 @@ h-[24px] w-[24px] "
 
         <nav >
           <h6 className="font-mono text-xl ">Download App</h6>
-<img src="../../public/footer/qrcode1.png"className="h-[100px]" alt="" />
-        <img src="../../public/footer/socialmedia.png"className="h-[25px]"  alt="" />
+<img src="/footer/qrcode1.png"className="h-[100px]" alt="" />
+        <img src="/footer/socialmedia.png"className="h-[25px]"  alt="" />
         </nav>
       </footer>
     </div>
