@@ -5,7 +5,7 @@ function Navbar() {
   <>
   <div className="navbar mt-[25px] border-l-orange-200">
   <div className="flex-1">
-    <a className=" text-3xl font-bold ml-8 flex gap-5">UrbanCart <img src="../../public/fevicon.svg " alt="" /></a>
+    <a className=" text-3xl font-bold ml-8 flex gap-5">UrbanCart <img src="/fevicon.svg " alt="" /></a>
    
   </div>
  <div className='mr-[25%]'>
@@ -18,11 +18,11 @@ function Navbar() {
  </div>
   <div className="flex-none gap-2">
  <span className='flex'>     <input type="text" placeholder="What are you looking for ?..." className="w-24 md:w-auto"  />
-    <img src="../../public/navbar/search.svg" alt="" />
+    <img src="/navbar/search.svg" alt="" />
     </span>
  
-    <img src="../../public/navbar/wishlist.svg" alt="" />
-    <img src="../../public/navbar/cart.svg" alt="" />
+    <img src="/navbar/wishlist.svg" alt="" />
+    <img src="/navbar/cart.svg" alt="" />
 
     <div className="dropdown dropdown-end">
       <div tabIndex={0} role="button" className="btn btn-ghost btn-circle avatar">
