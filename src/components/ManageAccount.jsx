@@ -12,9 +12,9 @@ function ManageAccount() {
         </p>
       </div>
 
-      {/* Main content area */}
+
       <div className="flex-1 flex">
-        {/* Sidebar */}
+    
         <div className="w-[230px] mt-[50px] h-[650px] ml-[150px] p-5 border rounded-lg shadow-lg">
           <p className="text-xl font-medium">Manage My Account</p>
           <div className="ml-[40px]">
@@ -30,13 +30,13 @@ function ManageAccount() {
           <p className="text-xl font-medium mt-8">My Wishlist</p>
         </div>
 
-        {/* Main Profile Editing Section */}
+    
         <div className="w-[700px] ml-[350px] h-[650px] mt-[50px] p-5 border rounded-lg shadow-lg">
           <span className="text-red-500 text-3xl font-semibold">
             Edit Your Profile
           </span>
 
-          {/* User Information Inputs */}
+   
           <div className="mt-5">
             <div className="flex gap-10">
               <div className="flex flex-col">
@@ -76,7 +76,7 @@ function ManageAccount() {
             </div>
           </div>
 
-          {/* Password Changes Section */}
+       
           <div className="mt-10">
             <p className="text-xl font-medium mb-5">Password Changes</p>
             <div className="flex flex-col gap-4">
@@ -98,7 +98,7 @@ function ManageAccount() {
             </div>
           </div>
 
-          {/* Action Buttons */}
+    
           <div className="flex justify-end gap-4 mt-10">
             <button className="border-2 h-[56px] rounded-md w-[150px] text-xl font-medium hover:bg-red-500 hover:text-white">
               Cancel
@@ -110,7 +110,7 @@ function ManageAccount() {
         </div>
       </div>
 
-      {/* Footer at the bottom */}
+   
       <Footer className="mt-auto" />
     </div>
   );
