@@ -8,16 +8,17 @@ import ManageAccount from './components/ManageAccount'
 function App() {
   return (
     <div className=' overflow-x-hidden '>
-    {/* <Home/>
+    <Home/> 
      <Signup/>
-     <Signin/> 
+     <Signin/>
      <About/>
-     <Contact/>*/}
+     <Contact/>
 <ManageAccount/>
     </div>
 
   )
 }
+
 
 
 export default App
