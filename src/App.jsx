@@ -5,15 +5,17 @@ import Signin from './components/Signin'
 import About from './components/About'
 import Contact from './components/Contact'
 import ManageAccount from './components/ManageAccount'
+import Wishlist from './components/Wishlist'
 function App() {
   return (
     <div className=' overflow-x-hidden '>
-    <Home/> 
+    {/* <Home/> 
      <Signup/>
      <Signin/>
      <About/>
      <Contact/>
-<ManageAccount/>
+<ManageAccount/> */}
+<Wishlist></Wishlist>
     </div>
 
   )
