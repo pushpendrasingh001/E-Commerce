@@ -1,47 +1,56 @@
-import React from 'react'
-import Navbar from '../components/Navbar'
-import Footer from '../components/Footer'
+import React from 'react';
+import Navbar from '../components/Navbar';
+import Footer from '../components/Footer';
+
 function Signin() {
   return (
     <>
-      <Navbar/>
-   
-    <div className='h-[781px] w-[1300px] flex mt-[100px]'>
-       <div className='h-[781px] w-[800px]'>
-        <img className='h-[781px] w-[800px]' src="../../public/signup-in/signin-up.png" alt="" />
-       </div>
-       <div className='h-[530px] w-[371px]  mt-[180px] ml-[130px]'>
-        <p className='text-4xl font text-start'> Log in to exclusive</p>
-        <p className='font-medium mt-3'>Enter your details below</p>
-        <div>
-       
-       <form className='mt-6'>
-        <div className='flex flex-col gap-5 ' >
-  
-       <input type="text" placeholder="Email or Phone Number" className="input input-bordered w-full" />
-        <input type="text" placeholder="Password" className="input input-bordered w-full" />
+      <Navbar />
+      <div className='flex flex-col lg:flex-row justify-center items-center mt-10 lg:mt-[100px] w-full px-4'> 
+        
+        <div className='flex justify-center lg:w-[800px] w-full'>
+          <img 
+            className='object-cover w-full h-[300px] lg:h-[781px]' 
+            src="../../public/signup-in/signin-up.png" 
+            alt="Sign In" 
+          />
         </div>
-       </form>
-        </div>
-    
-         <div className='flex mt-6'>
-      <div>
-      <button className='bg-red-500 text-white h-[56px] rounded-md  w-[143px] text-xl font-medium'> Log in</button>
-      </div>
-          <div className='ml-[70px] mt-[15px] hover:underline text-red-500 font-medium text-lg'>
-          <a href=""> Forget Password ? </a> 
+
+        <div className='flex flex-col items-center justify-center w-full max-w-md lg:max-w-[371px] mt-10 lg:mt-[130px] lg:ml-[130px]'>
+          <p className='text-3xl lg:text-4xl font-semibold text-center'>Log in to exclusive</p>
+          <p className='font-medium mt-3 text-center'>Enter your details below</p>
+          
+          <form className='mt-6 w-full'>
+            <div className='flex flex-col gap-5'>
+              <input 
+                type='text' 
+                placeholder='Email or Phone Number' 
+                className='input input-bordered w-full h-[56px]' 
+              />
+              <input 
+                type='password' 
+                placeholder='Password' 
+                className='input input-bordered w-full h-[56px]' 
+              />
+            </div>
+          </form>
+
+          <div className='flex flex-col items-center mt-6 w-full'>
+            <button className='bg-red-500 text-white h-[56px] rounded-md w-full text-xl font-medium'>
+              Log in
+            </button>
+            <div className='mt-4 hover:underline text-red-500 font-medium text-lg text-center'>
+              <a href="">Forget Password?</a>
+            </div>
           </div>
-       
-         </div>
-      
-       </div>
-    </div>
- 
-<div className='mt-[163px]'>
-<Footer/>
-</div>
+        </div>
+      </div>
+
+      <div className='mt-[163px]'>
+        <Footer />
+      </div>
     </>
-  )
+  );
 }
 
-export default Signin
+export default Signin;

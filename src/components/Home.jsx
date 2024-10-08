@@ -1,19 +1,19 @@
 import React from 'react'
 import Navbar from './Navbar'
-import Sidebar from './Home/Sidebar'
-import HomeToday from './Home/HomeToday'
 import Footer from './Footer'
 import HomeCategories from './Home/HomeCategories'
 import HomeThis from './Home/HomeThis'
 import HomeBanner from './Home/HomeBanner'
 import HomeProduct from './Home/HomeProduct'
 import HomeFeature from './Home/HomeFeature'
+import HomeTimer from './Home/HomeTimer'
+import Sidebar from './Home/Sidebar'
 function Home() {
   return (
     <div className=''>
       <Navbar/>
-      <Sidebar/>
-      <HomeToday/>
+   <Sidebar/>
+      <HomeTimer/>
       <HomeCategories/>
       <HomeThis/>
       <HomeBanner/>

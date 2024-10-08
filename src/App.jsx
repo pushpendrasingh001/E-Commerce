@@ -9,13 +9,13 @@ import Wishlist from './components/Wishlist'
 function App() {
   return (
     <div className=' overflow-x-hidden '>
-    {/* <Home/> 
+     <Home/> 
      <Signup/>
      <Signin/>
-     <About/>
      <Contact/>
-<ManageAccount/> */}
-<Wishlist></Wishlist>
+     <ManageAccount/> 
+     <Wishlist/>
+     <About/>
     </div>
 
   )

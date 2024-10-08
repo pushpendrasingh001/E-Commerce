@@ -1,106 +1,114 @@
-
-import React from 'react'
-import Slider from 'react-slick'
+import React from 'react';
+import Slider from 'react-slick';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+
 function AboutCorousal() {
-  const data=[
+  const data = [
     {
-      name:'pushpendra singh',
-      img:'/public/about/hero.svg',
-      review:'Welcome to Book Haven, where words come alive! Our online bookstore is a sanctuary  .'
+      name: 'Pushpendra Singh',
+      img: '../public/profile.png',
+      review: 'Welcome to Book Haven, where words come alive! Our online bookstore is a sanctuary.'
+    },
+    {
+      name: 'Pushpendra Singh',
+      img: '../public/profile.png',
+      review: 'Welcome to Book Haven, where words come alive! Our online bookstore is a sanctuary.'
+    },
+    {
+      name: 'Pushpendra Singh',
+      img: '../public/profile.png',
+      review: 'Welcome to Book Haven, where words come alive! Our online bookstore is a sanctuary.'
+    },
+    {
+      name: 'Pushpendra Singh',
+      img: '../public/profile.png',
+      review: 'Welcome to Book Haven, where words come alive! Our online bookstore is a sanctuary.'
+    },
+    {
+      name: 'Pushpendra Singh',
+      img: '../public/profile.png',
+      review: 'Welcome to Book Haven, where words come alive! Our online bookstore is a sanctuary.'
+    }
+  ];
 
-  },
-  {
-    name:'pushpendra singh',
-    img:'/public/about/hero.svg',
-    review:'Welcome to Book Haven, where words come alive! Our online bookstore is a sanctuary  .'
-
-},
-{
-  name:'pushpendra singh',
-  img:'/public/about/hero.svg',
-  review:'Welcome to Book Haven, where words come alive! Our online bookstore is a sanctuary  .'
-
-},
-{
-  name:'pushpendra singh',
-  img:'/src/assets/react.svg',
-  review:'Welcome to Book Haven, where words come alive! Our online bookstore is a sanctuary  .'
-
-},
-{
-  name:'pushpendra singh',
-  img:'/public/footer/qrcode1.png',
-  review:'Welcome to Book Haven, where words come alive! Our online bookstore is a sanctuary  .'
-
-}
-]
-
- var settings = {
+  var settings = {
     dots: true,
-    infinite:true,
-    speed: 500,
-    slidesToShow: 3,
-    slidesToScroll: 1,
-    initialSlide: 0,
+    infinite: true,
     autoplay: true,
-    speed: 2000,
     autoplaySpeed: 2000,
-    
+    speed: 500,
+    slidesToShow: 5,
+    slidesToScroll: 1,
+
     responsive: [
+      {
+        breakpoint: 1440,
+        settings: {
+          slidesToShow: 4,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: true,
+        }
+      },
       {
         breakpoint: 1024,
         settings: {
           slidesToShow: 3,
-          slidesToScroll: 3,
+          slidesToScroll: 1,
           infinite: true,
-          dots: true
+          dots: true,
+        }
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          dots: true,
         }
       },
       {
         breakpoint: 600,
         settings: {
           slidesToShow: 2,
-          slidesToScroll: 2,
-          initialSlide: 2
+          slidesToScroll: 1,
+          dots: true,
         }
       },
       {
         breakpoint: 480,
         settings: {
           slidesToShow: 1,
-          slidesToScroll: 1
+          slidesToScroll: 1,
+          dots: true,
         }
       }
     ]
   };
-  return(<>
-  <div className='mt-6 w-[1150px] m-[2%] items-center ml-[270px] '>
-      <Slider {...settings}>
-        
- {data.map((s)=>(
-<div className='bg-red-100 h-[450px] text-black rounded-xl'>
-  <div className=' h-56 rounded-t-xl bg-indigo-500 flex justify-center items-center '>
-<img src={s.img} className='rounded-full h-44 w-44'/>
-  </div>
-  <div className='flex flex-col justify-center items-center gap-4 p-1'> 
-<p className='text-xl font-semibold'>{s.name}</p>
-<p className=" text-center">{s.review}</p>
-<div className='flex flex-row  gap-5 justify-center pt-5'>
-   <button className=" btn-circle ">
-  <span class="[&>svg]:h-7 [&>svg]:w-7 [&>svg]:fill-[#333]">
- <span class="[&>svg]:h-7 [&>svg]:w-7 [&>svg]:fill-[#c13584]">
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
-   
-    <path
-      d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z" />
-  </svg>
-</span>
-</span>
-</button>
 
-  <button className="btn-circle ">
+  return (
+    <>
+      <div className='mt-6 w-[96%] m-[2%] items-center relative'>
+        <Slider {...settings}>
+          {data.map((s, index) => (
+            <div key={index} className='h-[450px] bg-slate-200 text-black rounded-xl mx-4'> 
+              <div className='h-56 rounded-t-xl bg-indigo-50 flex justify-center items-center'>
+                <img src={s.img} className='rounded-full h-44 w-44' />
+              </div>
+              <div className='flex flex-col justify-center items-center gap-4 p-1'>
+                <p className='text-xl font-semibold'>{s.name}</p>
+                <p className="text-center">{s.review}</p>
+                <div className='flex flex-row gap-5 justify-center pt-5'>
+              
+                  <button className="btn-circle">
+                    <span className="[&>svg]:h-7 [&>svg]:w-7 [&>svg]:fill-[#c13584]">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                        <path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z" />
+                      </svg>
+                    </span>
+                  </button>
+                  <button className="btn-circle ">
 <span class="[&>svg]:h-7 [&>svg]:w-7 [&>svg]:fill-[#128c7e]">
  <span class="[&>svg]:h-7 [&>svg]:w-7 [&>svg]:fill-[#0077b5]">
  <span class="[&>svg]:h-7 [&>svg]:w-7 [&>svg]:fill-[#ea4335]">
@@ -124,15 +132,14 @@ function AboutCorousal() {
 </span>
 </span>
 </button>
-   </div>
-  </div>
-</div>
-))}
-
-      </Slider>
-  </div>
-  </>)
-
+                </div>
+              </div>
+            </div>
+          ))}
+        </Slider>
+      </div>
+    </>
+  );
 }
 
-export default AboutCorousal
+export default AboutCorousal;
